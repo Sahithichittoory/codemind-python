@@ -1,7 +1,3 @@
 n=int(input())
 nums = list(map(int,input().split()))
-s=0
-for i in nums:
-    if i % 2 ==0:
-        s+=i
-print(s)
+print(sum(filter(lambda x: x%2 ==0,nums)))
